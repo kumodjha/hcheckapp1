@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: hcheckapp
+  host: hcapp1
+  disk_quota: 1024M
+  services:
+  - mongodbnode
+  - Mobile Client Access-iyh9pf5s
