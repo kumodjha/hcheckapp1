@@ -1,0 +1,69 @@
+<!doctype HTML>
+<html>
+  <head> <title> Home Page</title><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> 
+  		<style>
+.center {
+    text-align: center;
+    margin-top:20px;
+    border: 5px solid saddlebrown;
+		color: brown;
+}
+
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:pink; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+
+.app {
+        float:left;
+        padding-left:20px;
+        margin-top:80px;
+        min-height:450px;
+        margin-bottom:20px;  
+        color: lawngreen
+
+    }
+      .footer {
+            width:100%;
+            height:54px;
+            display: block;
+            clear:both;
+            margin-top:80px;
+            left:0;   
+
+      }
+</style>
+<script type="text/javascript">
+function newwindow(){
+  var appName = document.getElementById("appName").value;
+  var cycleDate = document.getElementById("cycleDate").value;
+
+  var url = "https://hcapp.mybluemix.net/output?appName="+appName+"&cycleDate="+cycleDate;
+  window.open(url,"width=1500","height=800");
+ 
+}
+</script>
+  </head>
+  <body text="black" bgcolor=#030C5A>
+			     <div class="center">
+		            	<h2>PRODUCTION CYCLE HEALTH CHECK QUERY HOME </h2>
+	 			 </div>
+         <form action="/index" method="GET">
+
+        <div class="app">
+        <table>
+           <tr><td><label>Application name</label></td><td><input type="text" name="appName" value="" id="appName"/></td></tr>
+           <tr><td><label> Cycle  Date</label></td><td><input type="text" name="cycleDate" value="" id="cycleDate"/></td></tr>
+           <tr><td><label>  </label></td><td><input type="button" value="Submit" onclick="newwindow()"/></td></tr>          
+       </table>
+
+     </form>
+    <br><br><br><br><br><br><br><br><br><br><br>
+     <a href="https://hcapp.mybluemix.net/add_entry" >CLICK HERE TO MAKE ENTRY FOR HEALTH CHECK REPORT</a> 
+
+<div class="footer">
+        <h1>Enter the Application name and Cycle Date and Click on OK button to get the Health Check details</h1>
+       </div>
+
+  </body>
+</html>

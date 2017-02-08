@@ -1,11 +1,6 @@
 applications:
-- path: .
+- name: hcapp
   memory: 128M
-  instances: 1
-  domain: mybluemix.net
-  name: hcheckapp
-  host: hcapp1
-  disk_quota: 1024M
+  command: node app.js
   services:
   - mongodbnode
-  - Mobile Client Access-iyh9pf5s

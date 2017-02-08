@@ -1,0 +1,54 @@
+<!doctype HTML>
+<html>
+  <head><title>Add Health check entry</title>
+  		<style>
+.center {
+    text-align: center;
+    margin-top:20px;
+    border: 5px solid saddlebrown;
+		color: lightslategrey;
+}
+.app {
+        float:left;
+        padding-left:20px;
+        margin-top:80px;
+        min-height:450px;
+        margin-bottom:20px;  
+        color: lawngreen;
+
+    }
+      .footer {
+            width:100%;
+            height:54px;
+            display: block;
+            clear:both;
+            margin-top:60px;
+            left:0; 
+            color: limegreen;  
+
+      }
+</style>
+  </head>
+  <body text="black" bgcolor=#030C5A>
+			     <div class="center">
+		            	<h2>PRODUCTION CYCLE HEALTH CHECK ENTRY</h2>
+	 			 </div>
+     <form action="/add_entry" method="POST">
+       <div class="app">
+         <table>
+           <tr><td><label>Application name</label></td><td><input type="text" name="appName" value=""/></td></tr>
+           <tr><td><label> Cycle  Date</label></td><td><input type="text" name="cycleDate" value=""/></td></tr>
+           <tr><td><label>Cycle Completion Date</label></td><td><input type="text" name="cycleCompDate" value=""/></td></tr>
+           <tr><td><label> Received from</label></td><td><input type="text" name="receivedFrom" value=""/></td></tr>
+           <tr><td><label> Status of business</label></td><td><input type="text" name="StatusOfBusiness" value=""/></td></tr>
+           <tr><td><label> Problem/Issues</label></td><td><input type="text" name="ProblemIssues" value=""/></td></tr>
+           <tr><td><label>  </label></td><td><input type="submit" value="Submit"/></td></tr>
+       </table>
+       </div>
+     </form>
+<div class="footer">
+        <h3><a href="https://hcapp.mybluemix.net/"> CLICK TO HOME PAGE </a>
+       </div>
+
+  </body>
+</html>

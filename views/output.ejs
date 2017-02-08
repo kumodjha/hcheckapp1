@@ -1,0 +1,75 @@
+     <html>
+         <head>
+          <style>
+                .center {
+                    border: 5px solid saddlebrown;
+                    color: brown;
+                    padding-left:50px;
+                    margin-top:200px;
+                    min-height:600px;
+                    margin-left:200px;  
+                }
+                .hchead {
+                    border: 5px solid saddlebrown;
+                    text-align: center;
+                    color: brown;
+                    padding-left:50px;
+                    margin-top:30px;
+                    min-height:50px;
+                    margin-left:240px;  
+                    margin-right:200px;  
+                }
+                h1 {
+                    font-size: 250%;
+                }
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    padding: 15px;
+                }
+                            th {
+                    text-align: left;
+                }
+                            table {
+                    border-spacing: 10px;
+                }
+                                    table#t1 tr:nth-child(even) {
+                    color: darkred;
+                    background-color: #C0C0C0;
+                    font-weight: bold;
+                }
+                                    
+                                    table#t1 th {
+                    color: maroon;
+                    background-color:#95D204;
+                
+                }
+            </style>
+         </head>
+         <body text="black" bgcolor=#030C5A>
+			     <div class="hchead" >
+		            	<h1>HEALTH CHECK STATUS</h1>
+	 			 </div>
+            
+            <table id="t1" style="width:80%" class="center">
+            <tr> 
+                <th>Application Name</th>
+                 <th>Cycle Date</th>
+                  <th>Cycle Completion date</th>
+                   <th>Received From</th>
+                  <th>Status Of Business</th>
+                 <th>Problem/Issues</th>
+                
+            </tr>
+            <tr>
+                <td><%= health.applicationName %></td>
+                <td><%= health.cycleDate %></td>
+          <td><%= health.cycleCompletionDate %></td>
+                <td><%= health.receivedFrom %></td>
+          <td><%= health.statusOfBusiness %></td>
+                <td><%= health.problemIssues %></td>
+            </tr>
+            
+            </table> 
+         </body>
+     </html>
